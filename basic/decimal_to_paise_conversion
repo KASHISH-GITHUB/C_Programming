@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int paise;
+    float decimal;
+    printf("enter the price of item in decimal form : ");
+    scanf("%f",&decimal);
+    paise=decimal*100;
+    printf("your entered price in paise is : %d",paise);
+    return 0;
+}
