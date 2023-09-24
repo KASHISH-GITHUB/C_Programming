@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float n;
+    int l;
+
+    printf("enter the floating point number: ");
+    scanf("%f",&n);
+    l= (int)n%10;
+    printf("the right most digit of integral part is : %d ",l);
+    return 0;
+}
