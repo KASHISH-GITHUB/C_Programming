@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a,f,s,t,r;
+    printf("enter three digit number");
+    scanf("%d",&a);
+    t=a%10;
+    printf("the last digit of number is %d\n",t);
+    f=a/100;
+    printf("the first digit of number is %d",f);
+    s=f+t;
+    printf("\nthe sum of first and last digit of number is %d",s);
+    return 0;
+}
