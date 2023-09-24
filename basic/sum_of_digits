@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a,f,s,t,r;
+    printf("enter three digit number");
+    scanf("%d",&a);
+    f=a%10;
+    s=(a/10)%10;
+    t=a/100;
+    r=f+s+t;
+    printf("the sum of  digit's number is %d",r);
+    return 0;
+}
