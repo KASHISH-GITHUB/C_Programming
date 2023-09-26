@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <limits.h>
+int main()
+{
+    int i, j, r, c;
+    printf("enter the number of rows in first array");
+    scanf("%d", &r);
+    printf("\nenter the number of columns in  first array");
+    scanf("%d", &c);
+    int arr[r][c];
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            printf("%d", arr[i][j]);
+        }
+        printf("\n");
+   }
+        int max = INT_MIN;
+        for (i = 0; i < r; i++)
+        {
+            for (j = 0; j < c; j++)
+            {
+                if (max < arr[i][j])
+                {
+                    max = arr[i][j];
+                }
+            }
+            printf("\n");
+        }
+        printf("the maximum element in 2d array is %d",max);
+        return 0;
+}
