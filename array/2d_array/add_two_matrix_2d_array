@@ -1,0 +1,57 @@
+//sum of two matrix is possible only when number of rows and columns of both matrix are same.
+#include<stdio.h>
+int main()
+{
+    int i,j,r,c;
+    printf("enter the number of rows in first array");
+    scanf("%d",&r);
+    printf("\nenter the number of columns in  first array");
+    scanf("%d",&c);
+    int arr[r][c];
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d",arr[i][j]);
+        }
+         printf("\n");
+    }
+   printf("\nenter the number of rows in second array");
+    scanf("%d",&r);
+    printf("\nenter the number of columns in  second array");
+    scanf("%d",&c);
+    int brr[r][c];
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&brr[r][c]);
+        }
+    }
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d",brr[r][c]);
+        }
+         printf("\n");
+    }
+    int sum[1000][1000];
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            sum[i][j]=arr[i][j]+brr[i][j];
+            printf("%d",sum[i][j]);
+        }
+         printf("\n");
+    }
+ return 0;
+}
