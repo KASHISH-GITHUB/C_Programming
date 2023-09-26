@@ -3,9 +3,9 @@
 int main()
 {
     int i, j, r, c;
-    printf("enter the number of rows in first array");
+    printf("enter the number of rows in array");
     scanf("%d", &r);
-    printf("\nenter the number of columns in  first array");
+    printf("\nenter the number of columns in array");
     scanf("%d", &c);
     int arr[r][c];
     for (i = 0; i < r; i++)
