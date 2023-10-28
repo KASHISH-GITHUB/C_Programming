@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,sqroot;
+    printf("enter a number :");
+    scanf("%d",&n);
+    if (n<0)
+    {
+    goto valid_number;
+    }
+    sqroot=sqrt(n);
+    printf("the square root of number is %d",sqroot);
+     valid_number:
+    return 0;
+
+}
+
