@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,totalmarks;
+    float avgmarks;
+    printf("enter the marks of sst\n");
+    scanf("%d",&m1);
+    printf("enter the marks of english\n");
+    scanf("%d",&m2);
+    printf("enter the marks of hindi\n");
+    scanf("%d",&m3);
+    printf("enter the marks of gk\n");
+    scanf("%d",&m4);
+    printf("enter the marks of evs\n");
+    scanf("%d",&m5);
+    totalmarks=m1+m2+m3+m4+m5;
+    printf("\nthe total marks of all these subjects are %d\n",totalmarks);
+    avgmarks=totalmarks/5.0;
+     printf("the average marks of all these subjects are %f",avgmarks);
+     switch((int)avgmarks/10)
+     {
+     case 10:
+     case 9:
+     case 8:
+        printf("grade A");
+        break;
+     case 7:
+     case 6:
+         printf("grade B");
+         break;
+     case 5:
+        printf("grade C");
+        break;
+     case 4:
+        printf("grade D");
+        break;
+     default: 
+        printf(" grade E");
+     }
+    return 0;
+    }
