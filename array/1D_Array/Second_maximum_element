@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int n,i,max,smax;
+    printf("enter the size of an array :");
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+     max=arr[0];
+     smax=INT_MIN;
+    for(i=0;i<n;i++)
+    {
+        if(max<arr[i])
+        {
+            max=arr[i];
+        }  
+    }
+
+    for(i=0;i<n;i++)
+    {
+        if(smax<arr[i]&&arr[i]!=max)
+        {
+            smax=arr[i];
+        }  
+    }
+    printf(" \nmaximum element of the array are : \n%d",max);
+    printf(" \n second maximum element of the array are : \n%d",smax);
+    return 0;
+}
