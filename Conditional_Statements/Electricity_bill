@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int bill,units,charge,subcharge,netamount;
+    printf("enter the amount of units");
+    scanf("%d",&units);
+    if(units == 0 && units <=200)
+    {
+        charge=80;
+    }
+    else if (units ==201 && units<=300)
+    {
+        charge=90;
+    }
+    else
+    {
+        charge=1;
+    }
+    bill=units*charge;
+    printf("the bill you got is %d",bill);
+    if(bill>400)
+    {
+        subcharge= bill * 15/100;
+        netamount=bill+subcharge;
+
+    }
+    if(netamount<100)
+    {
+        netamount=100;
+    }
+   printf("Surchage Amount: %d\n",subcharge);
+   printf("Net Amount Paid By the Customer : %d\n",netamount);
+
+    return 0;
+}
