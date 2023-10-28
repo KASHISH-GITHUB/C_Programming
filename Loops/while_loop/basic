@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    a=0;                    //initialization
+    while(a<10)             //condition
+    {
+        printf("%d",a);
+        a++;                //increment operator
+    
+    }
+    return 0;
+}
