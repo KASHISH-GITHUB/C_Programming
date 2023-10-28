@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,n,r,d,hcf,lcm;
+    printf("enter two numbers");
+    scanf("%d %d",&a,&b);
+    if(a>b)
+    {
+        n=a;d=b;
+    }
+    else
+    {
+        n=b;
+        d=a;
+    }
+    r=n%d;
+    while
+    (r!=0)
+    {
+        n=d;
+        d=n;
+        r=n%d;
+    }
+    hcf=d;
+    lcm=(a*b)/hcf;
+    printf("%d",hcf);
+    printf("%d",lcm);
+    
+
+}
