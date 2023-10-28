@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int n,a;
+    printf("enter the number till which you want to print odd numbers");
+    scanf("%d",&n);
+    a=1;
+    while(a<=n)
+    {
+        printf("%d\t",a);
+        a+=2;
+    }
+}
