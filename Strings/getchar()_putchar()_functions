@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+int main()
+{
+    char ch;
+   	ch =getchar();
+    printf("Your entered character is %c\n", ch);
+    char  cha='g';
+	putchar(cha);
+	return 0;
+}
