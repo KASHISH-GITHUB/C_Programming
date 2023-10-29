@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+int main()
+{
+    char ch[25];
+   printf("enter your name");
+   gets(ch); //used to take input from user
+   puts(ch); //print the input of user
+   
+	return 0;
+}
