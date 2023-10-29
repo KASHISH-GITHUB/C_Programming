@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[25];
+   printf("enter your name");
+   gets(str); //used to take input from user
+   puts(str); //print the input of user
+   int size=0; //initialisation count for size
+   int i=0; //indexing starts from zero
+   
+   //loop for counting the size of string
+   while(str[i]!='\0')
+   {
+   	size++;
+   	i++;
+   }
+   printf("the size of entered string is %d",size);
+   //loop for reversing the string 
+   for(int i=0,j=size-1;i<=j;i++,j--)
+   //swapping the characters
+   {
+   		char temp=str[i];
+   		str[i]=str[j];
+   		str[j]=temp;
+   }
+   puts(" the reverse  of entered string is  : ");
+   puts(str);
+   
+	return 0;
+}
