@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+int main()
+{
+    char ch[]="github";
+    int i=0;
+    while(ch[i]!='\0')
+    {
+    	putchar(ch[i]);        
+    	i++;
+	}
+   
+	return 0;
+}
